@@ -2,6 +2,12 @@
 
 Courses, Projects, Lectures for Compiler Based On Stanford [CS143](http://web.stanford.edu/class/cs143/)，[Ueyama Rui's Guidebook(Written by Japanese)](https://www.sigbus.info/compilerbook#) and my college course.
 
+# Prerequisites
+
+[CS154](http://infolab.stanford.edu/~ullman/ialc/spr10/spr10.html#LECTURE%20NOTES)
+
+[TsingHua Compiler](https://decaf-lang.github.io/minidecaf-tutorial/)
+
 
 # Lecture Notes
 
