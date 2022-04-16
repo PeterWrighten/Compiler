@@ -1,1 +1,10 @@
 **/.DS_Store
+
+**/.vscode
+
+**/.idea
+
+**/target
+
+**/Cargo.lock
+
