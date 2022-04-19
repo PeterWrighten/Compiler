@@ -10,6 +10,7 @@ Courses, Projects, Lectures for Compiler Based On Stanford [CS143](http://web.st
 
 [LLVM](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15745-s14/public/lectures/)
 
+[PKU Compiler](https://pku-minic.github.io/online-doc/#/preface/)
 
 # Lecture Notes
 
