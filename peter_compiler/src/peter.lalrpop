@@ -1,0 +1,9 @@
+grammar;
+
+match {
+    r"\s*" => {},
+    r"//[^\n\r]*[\n\r]*" => {},
+    _
+}
+
+pub CompUnit: String = <func_def: FuncDef> => func_def;

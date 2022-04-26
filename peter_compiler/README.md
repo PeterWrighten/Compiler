@@ -122,3 +122,30 @@
         Param ::= Type IDENT;
         Type ::= "int" | "long";
         ```
+- Implementation: Flex and Bison
+    - `.l`: Flex used to describe Terminal Symbol in EBNF(Type of Token)
+    - `.y`: Bison used to describe EBNF rules. Generate a LALR Parser.
+    - Structure of `.l` and `.y`:
+    ```
+    # Option
+
+    % {
+        // Global code (Declaration, definition)
+    %}
+
+    // Definition of Flex/Bison
+    // As for Flex, define RE of some symbol.
+    // As for Bison, define non-terminal/terminal type.
+    
+    %%
+
+    // Rule description about Flex/Bison
+    // Flex: what lexer do when scanned a token
+    // Bison: what should parser do when encountered some syntax rule.
+
+    %%
+
+    // customized code
+    // caller, aider, definition of function
+    ```
+
