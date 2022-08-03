@@ -5,4 +5,9 @@ members = [
     "driver",
     "print",
     "syntax",
+    "typeck",
+    "tac",
+    "tacgen",
+    "tacopt",
+    "codegen",
 ]
