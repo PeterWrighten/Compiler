@@ -11,3 +11,6 @@ members = [
     "tacopt",
     "codegen",
 ]
+
+[profile.dev.overrides."*"]
+opt-level = 3
