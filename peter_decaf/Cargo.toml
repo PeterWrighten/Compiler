@@ -12,5 +12,7 @@ members = [
     "codegen",
 ]
 
+cargo-features = ["profile-overrides"]
+
 [profile.dev.overrides."*"]
 opt-level = 3
