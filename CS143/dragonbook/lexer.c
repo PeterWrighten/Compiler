@@ -1,4 +1,6 @@
 #include "global.h"
+#include <ctype.h>
+#include <stdio.h>
 
 char lexbuf[BSIZE];
 int lineno = 1;
@@ -34,7 +36,7 @@ int lexan() {
              }
              p = lookup(lexbuf);
             if(p == 0) {
-                 p = insert(lexbuf. ID);
+                 p = insert(lexbuf, ID);
             }
             tokenval = p;
             return symtable[p].token;                

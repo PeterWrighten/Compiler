@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
+#ifndef GLOBAL_H
+#define GLOBAL_H
 
 #define BSIZE 128
 #define NONE -1
@@ -14,14 +13,36 @@
 int tokenval;
 int lineno;
 
-struct entry {
+// error.c
+int error(char*);
+
+// lexer.c
+int lexan();
+
+// parser.c
+void parse();
+void expr();
+void term();
+void factor();
+void match(int);
+
+// emitter.c
+void emit(int, int);
+
+// symbol.c
+int lookup(char*);
+int insert(char*, int);
+
+// init.c
+void init();
+
+
+typedef struct{
     char* lexptr;
     int token;
-};
+} entry;
 
-int error(char *msg) {
-    fprintf(stderr, "%s\n", msg);
-    exit(1);
-}
 
-struct entry symtable[] = {};
+extern entry symtable[];
+
+#endif
