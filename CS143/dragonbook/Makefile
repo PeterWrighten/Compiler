@@ -11,6 +11,10 @@ pcc: global.h main.o $(OBJS)
 clean:
 	rm -f *.o *.s 
 
-all: pcc
+run: 
+	make
+	make clean
+	clear
+	./pcc
 
-.PHONY: clean
+.PHONY: clean run
