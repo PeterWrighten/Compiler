@@ -1,10 +1,20 @@
-**/.DS_Store
+.DS_Store
 
-**/.vscode
+.vscode
 
-**/.idea
+.idea
 
-**/target
+target
 
-**/Cargo.lock
+Cargo.lock
+
+a.out
+
+*.o
+
+*.S
+
+*.s
+
+*.exe
 
