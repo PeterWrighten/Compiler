@@ -1,1 +1,3 @@
-"_" { return yy::parser::make_MINUS(loc); }
+
+
+"-"     { return yy::parser::make_MINUS(loc); }
